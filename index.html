@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page three academy</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <
+    <script>
+        $(document).ready(function() {
+        $('#icon').click(function() {
+            $('ul').toggleClass('show');
+        });
+
+        $('.menu a').click(function() {
+            $('ul').removeClass('show');
+        });
+        });
+
+    </script>
+    
+</head>
+<body>
+    
+    <header>
+        <div class="header-container">
+            <div class="logo-name">
+                <div class="logo">
+                    <img src="imgs/page3.jpg" alt="Logo">
+                </div>
+                <div class="header-info">
+                    <h3>Page Three Academy</h3>
+                </div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#course">Courses</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <label id="icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </nav>
+            
+        </div>
+    </header>
+    <section class="home-section" id="home">
+        <div class="containers">
+            <h2>START TODAY NOT TOMORROW</h2>
+            <p>At Page Three Academy, we believe in empowering students through quality education. Our dedicated team of educators is committed to providing comprehensive learning experiences that foster academic excellence and personal growth.</p>
+            <div class="card-containers">
+                <div class="cards">
+                    <img src="imgs/sample4.jpg" alt="Image 1">
+                    <h3>Programs & Courses</h3>
+                    <p>Explore our wide range of programs and courses designed to cater to the diverse learning needs of students.</p>
+                </div>
+                <div class="cards">
+                    <img src="imgs/sample5.jpg" alt="Image 2">
+                    <h3>Experienced Instructors</h3>
+                    <p>Learn from experienced instructors who are passionate about teaching and committed to your success.</p>
+                </div>
+                <div class="cards">
+                    <img src="imgs/sample1.jpg" alt="Image 3">
+                    <h3>Interactive Learning Environment</h3>
+                    <p>Experience an interactive learning environment that promotes active participation and collaboration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="course-section" id="course">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="imgs/sample1.jpg" alt="Course 1">
+                    <h3>Course 1</h3>
+                    <p>Description of Course 1.</p>
+                </div>
+                <div class="card">
+                    <img src="imgs/sample2.jpg" alt="Course 2">
+                    <h3>Course 2</h3>
+                    <p>Description of Course 2.</p>
+                </div>
+                <div class="card">
+                    <img src="imgs/page3.jpg" alt="Course 3">
+                    <h3>Course 3</h3>
+                    <p>Description of Course 3.</p>
+                </div>
+                <div class="card">
+                    <img src="imgs/sample4.jpg" alt="Course 4">
+                    <h3>Course 4</h3>
+                    <p>Description of Course 4.</p>
+                </div>
+                <div class="card">
+                    <img src="imgs/sample5.jpg" alt="Course 5">
+                    <h3>Course 5</h3>
+                    <p>Description of Course 5.</p>
+                </div>
+                <div class="card">
+                    <img src="imgs/page3.jpg" alt="Course 6">
+                    <h3>Course 6</h3>
+                    <p>Description of Course 6.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are educators passionate about providing quality education and empowering students to achieve their goals. Our mission is to make learning enjoyable and accessible for everyone. With our experienced team of teachers and innovative teaching methods, we strive to create a positive and engaging learning environment.</p>
+            <p>For more information, please visit our <a href="https://www.facebook.com/pagethreeacademy" target="_blank">Facebook page</a>.</p>
+        </div>
+    </section>
+
+
+
+
+    <div class="contact-form" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="imgs/page3.jpg" alt="Logo">
+            </div>
+            <div class="footer-info">
+                <h2>Page Three Academy</h2>
+                <p>123 Main Street, Kerala</p>
+                <p>Contact: +91 9747886626</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/pagethreeacademy"><img src="imgs/facebook.png" alt="Facebook"></a>
+                <a href="https://t.me/pagethreeacademy"><img src="imgs/telegram.png" alt="telegram"></a>
+                <a href="#"><img src="imgs/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

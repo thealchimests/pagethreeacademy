@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background-color: #FFDA31;
+    color: white;
+    padding: 10px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-name {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 55px;
+    height: 75px;
+}
+
+.header-info h3 {
+    font-family: 'Autour One', Regular;
+}
+
+.menu {
+    margin-right: 30px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    font-size: 20px;
+    color: #fefefe;
+    margin: 0 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+a.active,a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+.menu #icon{
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 15px;
+    display: none;
+}
+
+@media (max-width: 1115px) {
+    .header-info {
+        font-size: 20px;
+    }
+    .menu #icon{
+        display: block;
+        
+    }
+    .menu ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        display: block;
+        line-height: 80px;
+        transition: all .5s;
+    }
+    .menu a{
+        font-size: 20px;
+    }
+    a.active{
+        border: none;
+    }
+    a:hover{
+        border: 1px solid white;
+    }
+    .menu ul.show{
+        left: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .header-info {
+        font-size: 20px;
+    }
+    .menu #icon{
+        display: block;
+        
+    }
+    .card-containers .cards {
+            flex: 100%;
+            max-width:100%;
+            row-gap: 10px;
+    }
+    .menu ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        display: block;
+        line-height: 80px;
+        transition: all .5s;
+    }
+    .menu a{
+        font-size: 20px;
+    }
+    a.active{
+        border: none;
+    }
+    a:hover{
+        border: 1px solid white;
+    }
+    .menu ul.show{
+        left: 0;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .header-info {
+        font-size: 20px;
+    }
+    .menu #icon{
+        display: block;
+        
+    }
+    .menu ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        display: block;
+        line-height: 80px;
+        transition: all .5s;
+    }
+    .card-containers .cards {
+        flex: 100%;
+        max-width:100%;
+}
+    .menu a{
+        font-size: 20px;
+    }
+    a.active{
+        border: none;
+    }
+    a:hover{
+        border: 1px solid white;
+    }
+    .menu ul.show{
+        left: 0;
+    }
+}
