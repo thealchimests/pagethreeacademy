@@ -16,12 +16,15 @@
         $(document).ready(function() {
         $('#icon').click(function() {
             $('ul').toggleClass('show');
+            $('body').toggleClass('no-scroll');
         });
 
         $('.menu a').click(function() {
             $('ul').removeClass('show');
+            $('body').removeClass('no-scroll');
         });
         });
+
 
     </script>
     
