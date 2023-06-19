@@ -10,15 +10,20 @@
     padding: 0 20px;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Autour One', Regular;
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url(path-to-your-font-file/HKGrotesk-Medium.otf) format('opentype');
+}
 
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'HK Grotesk', sans-serif;
 }
 
 p {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .card-containers {
@@ -52,30 +57,58 @@ p {
 }
 
 .list-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.list-container > div {
+  background-color: #e8e3f3;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 300px; /* Adjust the width as needed */
+}
+
+@media screen and (max-width: 480px) {
+  .list-container > div {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.list-container ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.list-container ul li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .list-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-.list-container ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.list-container > div {
+    width: 100%;
+    max-width: 250px;
+  }
 }
 
-.list-container ul li {
-    margin-bottom: 10px;
+.line-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px; /* Adjust as needed */
+  background-color: #dbf1e3; /* Background color */
+  border-radius: 10px; /* Add curved corners */
 }
 
-.list-container {
-    display: flex;
-    justify-content: space-between;
+.box h2 {
+  margin: 0;
 }
 
-.list-container ul {
-    list-style: disc;
-    padding-left: 20px;
-}
 
-.list-container ul li {
-    margin-bottom: 10px;
-}
