@@ -111,4 +111,31 @@ p {
   margin: 0;
 }
 
+.box-container {
+      background-image: linear-gradient(to right, #FFC371, #FF5F6D);
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      color: #fff;
+      text-align: center;
+    }
 
+    .box-content {
+      padding: 0 40px; /* Adds padding on left and right sides */
+    }
+
+    .box-content h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .box-content p {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+.youtube-icon {
+      width: 50px; /* Adjust the width as desired */
+      height: auto; /* Maintain aspect ratio */
+    }
