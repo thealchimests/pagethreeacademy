@@ -31,8 +31,16 @@ header {
     height: 75px;
 }
 
+@font-face {
+  font-family: 'BonvenoCF';
+  src: url(path-to-your-font-file/BonvenoCF-Bold.otf) format('opentype');
+  font-weight: bold;
+}
+
 .header-info h3 {
-    font-family: 'Autour One', Regular;
+  font-family: 'BonvenoCF', sans-serif;
+  font-weight: bold;
+  color: black;
 }
 
 .menu {

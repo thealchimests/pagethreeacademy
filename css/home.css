@@ -10,15 +10,20 @@
     padding: 0 20px;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Autour One', Regular;
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url(path-to-your-font-file/HKGrotesk-Medium.otf) format('opentype');
+}
 
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'HK Grotesk', sans-serif;
 }
 
 p {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .card-containers {
@@ -50,3 +55,87 @@ p {
 .cards p {
     font-size: 14px;
 }
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.list-container > div {
+  background-color: #e8e3f3;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 300px; /* Adjust the width as needed */
+}
+
+@media screen and (max-width: 480px) {
+  .list-container > div {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.list-container ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.list-container ul li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .list-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.list-container > div {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+.line-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px; /* Adjust as needed */
+  background-color: #dbf1e3; /* Background color */
+  border-radius: 10px; /* Add curved corners */
+}
+
+.box h2 {
+  margin: 0;
+}
+
+.box-container {
+      background-image: linear-gradient(to right, #FFC371, #FF5F6D);
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .box-content {
+      padding: 0 40px; /* Adds padding on left and right sides */
+    }
+
+    .box-content h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .box-content p {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+.youtube-icon {
+      width: 50px; /* Adjust the width as desired */
+      height: auto; /* Maintain aspect ratio */
+    }
