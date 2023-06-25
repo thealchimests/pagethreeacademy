@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/testimonials.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script>
@@ -137,106 +138,95 @@
         </div>
     </section>
 
-    <div class="box-container">
-        <div class="box-content">
-            <p>Checkout your youtube channel for more updates..</p>
+     <section class="testimonial-section">
+     
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial-carousel">
+                
+                <div class="testimonial-card">
+                    <p>"Hai friends, I am a student of Page Three Academy. Come and join, no doubt it will change your attitude and be a very comfortable center for you"</p>
+                    <p class="name">PREEJA KS</p>
+                    <p>LP-UP Student</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Very helpful classes, I really interested to study &I hope that I will acachieve my goal with the help of page 3academy"</p>
+                    <p class="name">Disha</p>
+                    <p>LP-UP Student</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The classes provided by Page Three Academy are very useful and helpful for attaining our goals. It makes us more confident in facing exams"</p>
+                    <p class="name">Blessy G Selvin</p>
+                    <p>KTET Student</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Page three academy is a good platform for LP UP training. Video classes and pdf notes are very use full"                 </p>
+                    <p class="name">Sreethu Rohith
+                    </p>
+                    <p>LP-UP Student</p>
+                </div>
+  
+            </div>
+            <div class="navigation">
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
         </div>
-        <div class="youtube-link">
-            <a href="https://youtube.com/@pagethreeacademy" target="_blank">
-                <img src="imgs/youtubeicon.png" alt="YouTube Symbol" class="youtube-icon">
+    </section>
+    <div class="card-container">
+        <div class="card">
+            <p>Checkout our youtube channel for more info</p>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="youtube.png" alt="YouTube">
+            </a>
+        </div>
+        <div class="card">
+            <p>Join our telegram group for more info</p>    
+            <a href="https://t.me" target="_blank">
+                <img src="telegram.png" alt="Telegram">
             </a>
         </div>
     </div>
 
-    <div class="box-container">
-        <div class="box-content">
-            <p>"Hai friends, I am a student of Page Three Academy. Come and join, no doubt it will change your attitude and be a very comfortable center for you"</p>
-            <h2>PREEJA KS</h2>
-            <p>LP-UP Student</p>
-        </div>
-    </div>
+    <script>
+        const testimonialCards = document.querySelectorAll('.testimonial-card');
+        const prevButton = document.querySelector('.prev-btn');
+        const nextButton = document.querySelector('.next-btn');
+        let currentIndex = 0;
 
-    <div class="box-container">
-        <div class="box-content">
-            <p>"Very helpful classes, I really interested to study &I hope that I will acachieve my goal with the help of page 3academy
-                "</p>
-            <h2>Disha</h2>
-            <p>LP-UP Student</p>
-        </div>
-    </div>
+        prevButton.addEventListener('click', scrollCardsBackward);
+        nextButton.addEventListener('click', scrollCardsForward);
 
-    <div class="box-container">
-        <div class="box-content">
-            <p>"Page three academy is a good platform for LP UP training. Video classes and pdf notes are very use full"</p>
-            <h2>Sreethu Rohith</h2>
-            <p>LP-UP Student</p>
-        </div>
-    </div>
-    <div class="box-container">
-        <div class="box-content">
-            <p>"The classes provided by Page Three Academy are very useful and helpful for attaining our goals. It makes us more confident in facing exams
-                "</p>
-            <h2>Blessy G Selvin</h2>
-            <p>KTET Student</p>
-        </div>
-    </div>
-    <div class="box-container">
-        <div class="box-content">
-            <p>"Very helpful classes, I really interested to study &I hope that I will acachieve my goal with the help of page 3academy
-                "</p>
-            <h2>Disha</h2>
-            <p>LP-UP Student</p>
-        </div>
-    </div>
-    <div class="box-container">
-        <div class="box-content">
-            <p>"Very helpful classes, I really interested to study &I hope that I will acachieve my goal with the help of page 3academy
-                "</p>
-            <h2>Disha</h2>
-            <p>LP-UP Student</p>
-        </div>
-    </div>
-    <div class="box-container">
-        <div class="box-content">
-            <p>"Very helpful classes, I really interested to study &I hope that I will acachieve my goal with the help of page 3academy
-                "</p>
-            <h2>Disha</h2>
-            <p>LP-UP Student</p>
-        </div>
-    </div>
-    <div class="box-container">
-        <div class="box-content">
-            <p>"Very helpful classes, I really interested to study &I hope that I will acachieve my goal with the help of page 3academy
-                "</p>
-            <h2>Disha</h2>
-            <p>LP-UP Student</p>
-        </div>
-    </div>
-    <div class="box-container">
-        <div class="box-content">
-            <p>"Very helpful classes, I really interested to study &I hope that I will acachieve my goal with the help of page 3academy
-                "</p>
-            <h2>Disha</h2>
-            <p>LP-UP Student</p>
-        </div>
-    </div>
-    <div class="box-container">
-        <div class="box-content">
-            <p>"Very helpful classes, I really interested to study &I hope that I will acachieve my goal with the help of page 3academy
-                "</p>
-            <h2>Disha</h2>
-            <p>LP-UP Student</p>
-        </div>
-    </div>
-    <div class="box-container">
-        <div class="box-content">
-            <h2>User Review</h2>
-            <p>"Very helpful classes, I really interested to study &I hope that I will acachieve my goal with the help of page 3academy
-                "</p>
-            <h2>Disha</h2>
-            <p>LP-UP Student</p>
-        </div>
-    </div>
+        function scrollCardsForward() {
+            currentIndex++;
+            if (currentIndex >= testimonialCards.length) {
+                currentIndex = 0;
+            }
+            scrollCards();
+        }
+
+        function scrollCardsBackward() {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = testimonialCards.length - 1;
+            }
+            scrollCards();
+        }
+
+        function scrollCards() {
+            const cardWidth = testimonialCards[0].offsetWidth;
+            const scrollDistance = (cardWidth + 20) * currentIndex;
+
+            document.querySelector('.testimonial-carousel').scrollTo({
+                left: scrollDistance,
+                behavior: 'smooth'
+            });
+        }
+
+        setInterval(scrollCardsForward, 3000);
+    </script>
+
+
 
     <div class="contact-form" id="contact">
         <h2>Contact Us</h2>
