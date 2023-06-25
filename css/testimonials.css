@@ -68,7 +68,7 @@ h2 {
 .next-btn {
     margin-left: 10px;
 }
-.card-container {
+.cardf-container {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -76,7 +76,7 @@ h2 {
     margin-bottom: 100px;
 }
 
-.card {
+.cardf {
 
     width: 150px;
     display: block;
@@ -91,22 +91,22 @@ h2 {
     
 }
 
-.card img {
+.cardf img {
     margin-top: 10px;
     width: 30px;
     height: 30px;
 }
 
 @media (max-width: 767px) {
-    .card-container {
+    .cardf-container {
         bottom: 10px;
         right: 10px;
     }
 
-    .card{
+    .cardf{
         text:none;
     }
-    .card img {
+    .cardf img {
         width: 20px;
         height: 20px;
     }
