@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial-section {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+ 
+.container {
+    max-width:970px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-carousel {
+    overflow: hidden;
+    scroll-behavior: smooth;
+    white-space: wrap;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+.testimonial-card {
+    width: 450px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-align: center;
+}
+.testimonial-card img{
+    margin-top: 10px;
+    width:35px;
+    height: 25px;
+}
+
+.name {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation button {
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-btn {
+    margin-right: 10px;
+}
+
+.next-btn {
+    margin-left: 10px;
+}
+.card-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    margin-bottom: 100px;
+}
+
+.card {
+
+    width: 150px;
+    display: block;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: #d9f03e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.card img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 767px) {
+    .card-container {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .card{
+        text:none;
+    }
+    .card img {
+        width: 20px;
+        height: 20px;
+    }
+}
