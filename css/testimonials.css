@@ -25,7 +25,7 @@ h2 {
     scroll-behavior: smooth;
     white-space: wrap;
     display: grid;
-    grid-template-columns: repeat(10,1fr);
+    grid-template-columns: repeat(5,1fr);
 }
 
 .testimonial-card {
@@ -88,7 +88,6 @@ h2 {
     padding: 10px;
     text-align: center;
     margin-top: 20px;
-    
 }
 
 .cardf img {
@@ -102,12 +101,17 @@ h2 {
         bottom: 10px;
         right: 10px;
     }
-
-    .cardf{
-        text:none;
+    .cardf {
+        height:70px;
+        width: 70px;
+    }
+    .cardf p{
+        display: none;
     }
     .cardf img {
-        width: 20px;
-        height: 20px;
+       width: 50px;
+       height: 50px;
+       margin-top: 2px;
+    
     }
 }
