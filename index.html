@@ -11,21 +11,11 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/course.css">
     <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script>
-        $(document).ready(function() {
-        $('#icon').click(function() {
-            $('ul').toggleClass('show');
-            $('body').toggleClass('no-scroll');
-        });
 
-        $('.menu a').click(function() {
-            $('ul').removeClass('show');
-            $('body').removeClass('no-scroll');
-        });
-        });
-    </script>
+ 
     
 </head>
 <body>
@@ -37,7 +27,7 @@
                     <img src="imgs/page3.jpg" alt="Logo">
                 </div>
                 <div class="header-info">
-                    <h3>Page3 Academy</h3>
+                    <h3>Page Three Academy</h3>
                 </div>
             </div>
             <nav class="menu">
@@ -59,9 +49,9 @@
             <div class="line-box box">
                 <h2>START YOUR</h2>
                 <h2>TEACHING DREAM</h2>
-                <h2>WITH PAGE3</h2>
+                <h2>WITH PAGE THREE ACADEMY</h2>
             </div>
-            <p>As any job has its own dignity, teaching is a field of work that every aspirant looks forward to with great interest. Page 3 Academy's mission is to work to make your teaching dream easier. Our institution has been running to different levels of success using only online platform in the most systematic way.</p>
+            <p>As any job has its own dignity, teaching is a field of work that every aspirant looks forward to with great interest. Page Three Academy's mission is to work to make your teaching dream easier. Our institution has been running to different levels of success using only online platform in the most systematic way.</p>
             <div class="card-containers">
                 <div class="cards">
                     <img src="imgs/pic%201.jpg" alt="Image 1">
@@ -133,7 +123,7 @@
     <section class="about-section" id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>Page 3 Academy is a platform only for future teachers. Since teaching is the noblest profession, our institution is motivated by a sincere desire to make coaching accessible to all who wish to enter this field. In this age of technology, all the current courses are made available to the students at a low fee rate using the online platform.</p>
+            <p>Page Three Academy is a platform only for future teachers. Since teaching is the noblest profession, our institution is motivated by a sincere desire to make coaching accessible to all who wish to enter this field. In this age of technology, all the current courses are made available to the students at a low fee rate using the online platform.</p>
             <p>For more information, please visit our <a href="https://www.facebook.com/pagethreeacademy?mibextid=ZbWKwL" target="_blank">Facebook page</a>.</p>
         </div>
     </section>
@@ -141,7 +131,7 @@
      <section class="testimonial-section">
      
         <div class="container">
-            <h2>Testimonials</h2>
+            <h2>What our students says</h2>
             <div class="testimonial-carousel">
                 
                 <div class="testimonial-card">
@@ -150,7 +140,7 @@
                     <p>LP-UP Student</p>
                 </div>
                 <div class="testimonial-card">
-                    <p>"Very helpful classes, I really interested to study &I hope that I will acachieve my goal with the help of page 3academy"</p>
+                    <p>"Very helpful classes, I really interested to study &I hope that I will acachieve my goal with the help of page three academy"</p>
                     <p class="name">Disha</p>
                     <p>LP-UP Student</p>
                 </div>
@@ -173,20 +163,83 @@
             </div>
         </div>
     </section>
+    
+
+    
+    <div class="contact-form" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <section id="map"></section> -->
+
+ 
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="imgs/page3.jpg" alt="Logo">
+            </div>
+            <div class="footer-info">
+                <h2>Page Three Academy</h2>
+                <p>Nenmara, Palakkad</p>
+                <p>Kerala, 678508</p>
+                <p>Contact: +91 9747886626</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/pagethreeacademy?mibextid=ZbWKwL"><img src="imgs/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com/page_three_academy?igshid=MzRlODBiNWFlZA=="><img src="imgs/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
     <div class="cardf-container">
         <div class="cardf">
-            <p>Checkout our youtube channel for more info</p>
-            <a href="https://www.youtube.com" target="_blank">
-                <img src="imgs/youtubeicon.png" alt="YouTube">
-            </a>
-        </div>
-        <div class="cardf">
-            <p>Join our telegram group for more info</p>    
-            <a href="https://t.me" target="_blank">
-                <img src="imgs/Telegram.png" alt="Telegram">
+            <p>Download our Mobile App</p>
+            <a href="https://play.google.com/store/apps/details?id=co.marshal.yyqfv" target="_blank">
+            <img src="imgs/applogo.jpg" alt="app">
             </a>
         </div>
     </div>
+
+
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var location = { lat: 37.7749, lng: -122.4194 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: location,
+                zoom: 14
+            });
+
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Page Three Academy'
+            });
+        }
+    </script> -->
 
     <script>
         const testimonialCards = document.querySelectorAll('.testimonial-card');
@@ -223,54 +276,23 @@
             });
         }
 
-        setInterval(scrollCardsForward, 3000);
+        setInterval(scrollCardsForward, 4000);
     </script>
 
+    <script>
+        $(document).ready(function() {
+        $('#icon').click(function() {
+            $('ul').toggleClass('show');
+            $('body').toggleClass('no-scroll');
+        });
 
+        $('.menu a').click(function() {
+            $('ul').removeClass('show');
+            $('body').removeClass('no-scroll');
+        });
+        });
+    </script>
 
-    <div class="contact-form" id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
-
-
-    <footer>
-        <div class="footer-container">
-            <div class="logo">
-                <img src="imgs/page3.jpg" alt="Logo">
-            </div>
-            <div class="footer-info">
-                <h2>Page Three Academy</h2>
-                <p>Nenmara, Palakkad</p>
-                <p>Kerala, 678508</p>
-                <p>Contact: +91 9747886626</p>
-            </div>
-            <div class="social-media">
-                <a href="https://www.facebook.com/pagethreeacademy?mibextid=ZbWKwL"><img src="imgs/facebook.png" alt="Facebook"></a>
-                <a href="https://instagram.com/page_three_academy?igshid=MzRlODBiNWFlZA=="><img src="imgs/instagram.png" alt="Instagram"></a>
-            </div>
-        </div>
-    </footer>
 
 </body>
 </html>
