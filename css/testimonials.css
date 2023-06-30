@@ -8,9 +8,9 @@
     background-color: #f2f2f2;
     padding: 50px 0;
 }
- 
+
 .container {
-    max-width:970px;
+    max-width: 970px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -25,7 +25,7 @@ h2 {
     scroll-behavior: smooth;
     white-space: wrap;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .testimonial-card {
@@ -36,9 +36,10 @@ h2 {
     margin-right: 20px;
     text-align: center;
 }
-.testimonial-card img{
+
+.testimonial-card img {
     margin-top: 10px;
-    width:35px;
+    width: 35px;
     height: 25px;
 }
 
@@ -62,11 +63,26 @@ h2 {
 }
 
 .prev-btn {
+    color: rgba(51, 48, 48, 0.286);
     margin-right: 10px;
 }
 
 .next-btn {
+    color: rgba(51, 48, 48, 0.286);
     margin-left: 10px;
+}
+
+.cardf {
+    width: 150px;
+    display: block;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: #fefefe;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
 }
 .cardf-container {
     position: fixed;
@@ -75,28 +91,47 @@ h2 {
     z-index: 9999;
     margin-bottom: 100px;
 }
-
-.cardf {
-
-    width: 150px;
-    display: block;
-    flex-direction: row;
-    align-items: flex-end;
-    background-color: #FFDA31;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-    margin-top: 20px;
-}
-
 .cardf img {
     margin-top: 10px;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    
 }
 
-@media (max-width: 767px) {
+
+@media (max-width: 1115px) {
+    .testimonial-card {
+        width: 400px;
+    }
+}
+
+@media (max-width: 800px) {
+    .testimonial-card {
+        width: 350px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .testimonial-card {
+        width: 300px;
+    }
+    .testimonial-carousel {
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        overflow-x: scroll;
+        grid-gap: 15px;
+        margin-left: 5px;
+    }
+
+    .testimonial-card {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .name {
+        margin-right: 0;
+    }
     .cardf-container {
         bottom: 10px;
         right: 10px;
@@ -114,4 +149,29 @@ h2 {
        margin-top: 2px;
     
     }
+    
+}
+
+@media (max-width: 400px) {
+
+    .testimonial-card {
+        width: 250px;
+    }
+    .testimonial-carousel {
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        overflow-x: scroll;
+        grid-gap: 15px;
+        margin-left: 5px;
+    }
+
+    .testimonial-card {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .name {
+        margin-right: 0;
+    }
+
 }
