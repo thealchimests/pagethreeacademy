@@ -24,7 +24,7 @@ h2 {
     scroll-behavior: smooth;
     white-space: wrap;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(20, 1fr);
 }
 
 .testimonial-card {
@@ -34,6 +34,9 @@ h2 {
     border-radius: 5px;
     margin-right: 20px;
     text-align: center;
+    background:url(../imgs/list.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .testimonial-card img {
@@ -116,7 +119,7 @@ h2 {
         width: 300px;
     }
     .testimonial-carousel {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(20, 1fr);
         justify-items: center;
         overflow-x: scroll;
         grid-gap: 15px;
@@ -157,7 +160,7 @@ h2 {
         width: 250px;
     }
     .testimonial-carousel {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(20, 1fr);
         justify-items: center;
         overflow-x: scroll;
         grid-gap: 15px;
