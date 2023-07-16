@@ -10,8 +10,8 @@
 
 .container {
     max-width: 970px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin-top: 0 auto;
+    padding: 20px;
 }
 
 h2 {
@@ -116,7 +116,11 @@ h2 {
 @media (max-width: 460px) {
 
     .testimonial-card {
-        width: 300px;
+        width: 350px;
+        margin-left: 5px    ;
+        margin-right: 0;
+        margin-bottom: 20px;
+        align-items: center;
     }
     .testimonial-carousel {
         grid-template-columns: repeat(20, 1fr);
@@ -126,10 +130,7 @@ h2 {
         margin-left: 5px;
     }
 
-    .testimonial-card {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
+
 
     .name {
         margin-right: 0;
@@ -157,7 +158,10 @@ h2 {
 @media (max-width: 400px) {
 
     .testimonial-card {
-        width: 250px;
+        width: 300px;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
     .testimonial-carousel {
         grid-template-columns: repeat(20, 1fr);
@@ -167,10 +171,6 @@ h2 {
         margin-left: 5px;
     }
 
-    .testimonial-card {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
 
     .name {
         margin-right: 0;
